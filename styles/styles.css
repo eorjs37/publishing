@@ -6,6 +6,39 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/*############## common ##############*/
+.float_left{
+    float: left;
+}
+
+.float_right{
+    float: right;
+}
+
+.ov_hidden{
+    overflow: hidden;
+}
+
+.w_40{
+    width: 40%;
+}
+
+.w_50{
+    width: 50%;
+}
+
+.w_60{
+    width: 60%;
+}
+
+.fb{
+    font-weight: bold;
+}
+
+.pr_50{
+    padding-right: 50px;
+}
+
 /*############## header ##############*/
 header{
     width: 100%;
@@ -21,6 +54,7 @@ header{
 
 .headerwrap .logo{
     float: left;
+    cursor: pointer;
 }
 
 .headerwrap .menu{
@@ -115,9 +149,9 @@ header{
     width: 40px;
     height: 50px;
     border: 2px solid #fff;
-    border-radius: 13px;
+    border-radius: 16px;
     left: 320px;
-    bottom: 21%;
+    bottom: 29%;
 }
 
 .welcome .mouse .bar{
@@ -128,4 +162,84 @@ header{
     width: 2px;
     height: 16px;
     background-color: #fff;
+    animation: updown 0.5s linear infinite alternate-reverse;
+}
+
+@keyframes updown{
+    from{
+        top: 5px;
+    }
+
+    to{
+        top: 20px;
+    }
+}
+
+@keyframes wheele {
+    0%{
+      top: 10px;
+    }
+
+    50%{
+      top: 20px;
+    }
+
+    100%{
+      top: 10px;
+    }
+}
+
+/*############## section.ceo-access ##############*/
+section.ceo-access{
+
+}
+
+.ceo-access-inner {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 50px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ceo-access-inner .rest{
+    filter: invert(44%) sepia(60%) saturate(1470%) hue-rotate(340deg) brightness(105%) contrast(101%);
+}
+
+.ceo-access-inner .title{
+    font-size: 21px;
+    line-height: 2.1em;
+}
+
+.ceo-access-inner .desc{
+    font-size: 18px;
+    line-height: 1.7em;
+    margin-bottom: 7px;
+}
+
+.ceo-record{
+    padding: 20px;
+}
+
+.ceo-msg{
+    font-size: 28px;
+    color: #009b72;
+}
+
+.ceo-access-inner big{
+    display: block;
+    color: #009b72;
+    margin-bottom: 28px;
+}
+.ceo-photo{
+    padding: 20px;
+}
+
+.ceo-photo > img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+.access-inner{
+    width: 1300px;
+    margin: 0 auto;
 }
