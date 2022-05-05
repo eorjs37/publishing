@@ -243,3 +243,93 @@ section.ceo-access{
     width: 1300px;
     margin: 0 auto;
 }
+
+.access-content{
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.access-left{
+    float: left;
+    width: 60%;
+    padding-right: 165px;
+    padding-top: 150px;
+}
+
+.access-right{
+    float:right;
+    width: 40%;
+}
+
+.access-left h2{
+    font-size: 25px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+}
+
+.access-left p{
+    font-size: 18px;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+
+.access-left .btns a{
+    text-decoration: none;
+}
+
+
+/*############## section.banner ##############*/
+.banner{
+    background: url('../assets/img/wave-line.png') no-repeat center right, linear-gradient(to right, #69acfe, #6eaefd);;
+}
+
+.banner-inner{
+    width: 1300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.banner-inner > .radio-box{
+    float: left;
+    width: 50%;
+}
+
+.banner-inner > .radio-box > .box{
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+}
+
+.banner-inner > .radio-box > .box > label{
+    background-color: #fff;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+
+.banner-inner > .radio-box > .box > label > img{
+    width: 60px;
+    filter: invert(58%) sepia(79%) saturate(611%) hue-rotate(186deg) brightness(99%) contrast(103%);
+}
+
+.banner-inner > .desc{
+    float: left;
+    width: 50%;
+}
+
+input[name=tabmenu]{
+    display: none;
+}
+
+input[id=tab1]:checked ~div label[for=tab1],
+input[id=tab2]:checked ~div label[for=tab2],
+input[id=tab3]:checked ~div label[for=tab3]
+{
+    background-color: #34495e;
+}
+
+input[id=tab1]:checked ~div label[for=tab1] img{
+    filter: invert();
+}
